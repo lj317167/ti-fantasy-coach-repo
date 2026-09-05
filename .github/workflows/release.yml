@@ -1,0 +1,16 @@
+# On a version tag (v2027.1 etc.) build the claude.ai zip and attach it to a GitHub Release.
+# The "latest" release URL is stable: .../releases/latest/download/ti-fantasy-coach.zip
+name: release
+on:
+  push:
+    tags: ['v*']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/build.sh
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/ti-fantasy-coach.zip

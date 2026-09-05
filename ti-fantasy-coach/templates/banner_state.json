@@ -1,0 +1,65 @@
+{
+  "_comment": "Save file. Slots are in vertical list order (adjacency). Bases = expected two-best-games sum per stat for the drafted players; include off-banner candidates. Values below are the real TI 2026 state the night before Main Event lock, with community-projected bases (haircut applied to lotus).",
+  "year": 2026,
+  "stage": "main-event-prep",
+  "tokens": 1,
+  "lock_utc": "2026-08-20T02:00:00Z",
+  "titles": {"prefix": "Otherworldly", "suffix": "the Tormented"},
+  "options": [
+    "reroll stat green first",
+    "reroll quality blue all",
+    "reroll stat green all"
+  ],
+  "banners": {
+    "core": {
+      "team": "VSN",
+      "players": ["Satanic", "Noticed"],
+      "slots": [
+        {"color": "red",   "stat": "towers",    "tier": 4, "trait": "fractal"},
+        {"color": "green", "stat": "tormentor", "tier": 2, "trait": "benevolent"},
+        {"color": "red",   "stat": "cs",        "tier": 5, "trait": "vampiric"},
+        {"color": "green", "stat": "teamfight", "tier": 4, "trait": "unique"},
+        {"color": "red",   "stat": "gpm",       "tier": 4, "trait": "fractal"}
+      ]
+    },
+    "mid": {
+      "team": "FLCN",
+      "players": ["Malr1ne"],
+      "slots": [
+        {"color": "red",   "stat": "cs",        "tier": 5, "trait": "benevolent"},
+        {"color": "blue",  "stat": "runes",     "tier": 5, "trait": "vampiric"},
+        {"color": "green", "stat": "tormentor", "tier": 2, "trait": "unique"},
+        {"color": "red",   "stat": "deaths",    "tier": 4, "trait": "friendly"},
+        {"color": "green", "stat": "teamfight", "tier": 5, "trait": "friendly"}
+      ]
+    },
+    "support": {
+      "team": "VSN",
+      "players": ["Dukalis", "9Class"],
+      "slots": [
+        {"color": "blue",  "stat": "lotus",     "tier": 5, "trait": "benevolent"},
+        {"color": "green", "stat": "teamfight", "tier": 2, "trait": "vampiric"},
+        {"color": "blue",  "stat": "smokes",    "tier": 5, "trait": "friendly"},
+        {"color": "green", "stat": "stuns",     "tier": 5, "trait": "friendly"},
+        {"color": "blue",  "stat": "wards",     "tier": 5, "trait": "friendly"}
+      ]
+    }
+  },
+  "bases": {
+    "core":    {"cs": 5649, "gpm": 3518, "kills": 3424, "towers": 2300, "deaths": 3300, "madstone": 1500,
+                "tormentor": 2600, "teamfight": 3365, "roshan": 3516, "stuns": 1800, "firstblood": 1934, "courier": 1758},
+    "mid":     {"cs": 4491, "kills": 3317, "towers": 3168, "gpm": 3126, "deaths": 3300, "madstone": 1586,
+                "runes": 4000, "camps": 1500, "lotus": 1584, "watchers": 800, "smokes": 293, "wards": 400,
+                "tormentor": 2778, "teamfight": 3823, "roshan": 3516, "stuns": 2000, "firstblood": 1934, "courier": 2109},
+    "support": {"lotus": 6266, "wards": 3744, "smokes": 3370, "watchers": 3057, "camps": 2500, "runes": 1349,
+                "teamfight": 3357, "stuns": 2701, "roshan": 1758, "tormentor": 470, "firstblood": 1934, "courier": 2500}
+  },
+  "red_lines": [
+    "support.slot1 lotus T5 (largest slot on the roster)",
+    "support 3-Friendly set (smokes/stuns/wards)",
+    "core.slot3 cs T5 vampiric",
+    "mid.slot2 runes T5 vampiric",
+    "mid.slot3 tormentor live unique"
+  ],
+  "queue": []
+}
